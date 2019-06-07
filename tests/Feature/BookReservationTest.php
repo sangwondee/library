@@ -50,7 +50,6 @@ class BookReservationTest extends TestCase
     /** @test */
     public function a_book_can_be_updated()
     {
-
         $this->post('/books', [
             'title' => 'Cool Title',
             'author' => 'Victor'

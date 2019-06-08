@@ -13,8 +13,6 @@ class BookReservationTest extends TestCase
     /** @test */
     public function a_book_can_be_added_to_the_library()
     {
-        $this->withoutExceptionHandling();
-
         $response = $this->post('/books', [
             'title' => 'Cool Book Title',
             'author' => 'Sangwondee'

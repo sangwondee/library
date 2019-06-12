@@ -9,7 +9,7 @@ class BooksController extends Controller
 {
     public function index()
     {
-        return view('/books');
+        return 'hello index';
     }
 
     public function store()

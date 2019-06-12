@@ -10,7 +10,7 @@ class Book extends Model
 
     public function path()
     {
-        return '/books/' . $this->id;
+        return 'api/books/' . $this->id;
     }
 
     public function setAuthorIdAttribute($author)

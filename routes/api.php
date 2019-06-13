@@ -26,5 +26,9 @@ Route::post('/books', 'BooksController@store');
 Route::patch('/books/{book}', 'BooksController@update');
 Route::delete('/books/{book}', 'BooksController@destroy');
 
-// Author
+// Authors
 Route::post('/author', 'AuthorsController@store');
+
+// Reservations
+Route::post('/checkout/{book}', 'CheckoutBookController@store');
+Route::post('/checkin/{book}', 'CheckinBookController@store');
